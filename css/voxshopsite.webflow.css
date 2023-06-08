@@ -137,6 +137,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-columns: 1fr;
   margin-bottom: 40px;
+  padding-left: 40px;
   display: grid;
 }
 
@@ -2287,8 +2288,8 @@
   }
 
   .productgrid {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .heading-jumbo {
