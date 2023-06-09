@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
-<!--  Last Published: Thu Jun 08 2023 17:02:58 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Fri Jun 09 2023 20:17:40 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="6480a8c47978b52aef54a116" data-wf-site="64809ae9bb8b61382d4040c5">
 <head>
   <meta charset="utf-8">
@@ -136,38 +136,39 @@
     <div class="featuredsection">
       <h3 class="heading-2">Featured Products</h3>
       <div class="paragraph-bigger cc-bigger-light">Check out new and popular products</div>
-      <div class="w-layout-grid productgrid">
-        <div class="productcardwrap">
-          <a href="#" class="productcardimagewrap w-inline-block">
-            <div class="brix---badge-wrapper-top-right-2"></div><img src="images/Artboard-1.svg" width="500" alt="ProductImage" class="productcardimg">
-          </a>
-          <div class="productcardcontent">
-            <div class="productcontentwrap">
-              <div class="partnumberxlwrap">
-                <div class="partnumberwrap">
-                  <h3 class="partnumberholder">%part_number%</h3>
-                </div>
-              </div>
-              <div class="brix---mg-bottom-24px-3">
-                <div class="brix---color-neutral-842">
-                  <p class="brix---paragraph-default-7">Description: manufacturer_partnumber_model_simpletype</p>
-                </div>
+    </div>
+    <div class="w-layout-grid featuredproductwrap">
+      <div class="productcardwrap">
+        <a href="productpage-2.html" class="productcardimagewrap w-inline-block">
+          <div class="brix---badge-wrapper-top-right-2"></div><img src="images/Artboard-1.svg" width="500" alt="ProductImage" class="productcardimg">
+        </a>
+        <div class="productcardcontent">
+          <div class="productcontentwrap">
+            <div class="partnumberxlwrap">
+              <div class="partnumberwrap">
+                <h3 class="partnumberholder">%part_number%</h3>
               </div>
             </div>
-            <div class="quantitytocart">
-              <div class="productcardinput">
-                <div class="w-form">
-                  <form id="email-form" name="email-form" data-name="Email Form" method="get">
-                    <div class="quantityinput">
-                      <div forms="increment-decrement" class="increasedecreasebtn">
-                        <a button="minus" href="#" class="decrement-button w-button">-</a><input type="number" class="input-field w-input" maxlength="256" name="Quantity-2" data-name="Quantity 2" placeholder="0" id="Quantity-2" required="">
-                        <a button="plus" href="#" class="increment-button w-button">+</a>
-                      </div>
-                      <div class="udesly-code-snippet-4 w-embed w-script">
-                        <script>
+            <div class="brix---mg-bottom-24px-3">
+              <div class="brix---color-neutral-842">
+                <p class="brix---paragraph-default-7">{ % Description: manufacturer _partnumber_ modelnumber_ simpletype %}</p>
+              </div>
+            </div>
+          </div>
+          <div class="quantitytocart">
+            <div class="productcardinput">
+              <div class="w-form">
+                <form id="QuantityInput" name="email-form" data-name="Email Form" method="get">
+                  <div class="quantityinput">
+                    <div forms="increment-decrement" class="increasedecreasebtn">
+                      <a button="minus" href="#" class="decrement-button w-button">-</a><input type="number" class="input-field w-input" maxlength="256" name="Quantity-2" data-name="Quantity 2" placeholder="0" id="Quantity" required="">
+                      <a button="plus" href="#" class="increment-button w-button">+</a>
+                    </div>
+                    <div class="udesly-code-snippet-4 w-embed w-script">
+                      <script>
 (()=>{var u=class{constructor(t){this.wrapper=t;if(this.minus=t.querySelector('[button="minus"]'),!this.minus){console.error("Missing minus button",t);return}if(this.plus=t.querySelector('[button="plus"]'),!this.plus){console.error("Missing plus button",t);return}if(this.input=t.querySelector('input[type="number"], input[inputmode="numeric"]'),!this.input){console.error("Missing valid input",t);return}this.step=Number(this.input.getAttribute("step")||"1")||1,this.input.hasAttribute("min")&&(this.min=Number(this.input.getAttribute("min"))),this.input.hasAttribute("max")&&(this.max=Number(this.input.getAttribute("max"))),this.input.setAttribute("readonly",""),this.value=Number(this.input.value)||0,this.minus.addEventListener("click",n=>{if(n.preventDefault(),n.stopPropagation(),this.min==null)this.input.value=(this.value-this.step).toString();else{let e=this.value-this.step;e<this.min&&(e=this.min),this.input.value=e.toString()}this.input.dispatchEvent(new Event("change",{bubbles:!0}))}),this.plus.addEventListener("click",n=>{if(n.preventDefault(),n.stopPropagation(),this.max==null)this.input.value=(this.value+this.step).toString();else{let e=this.value+this.step;e>this.max&&(e=this.max),this.input.value=e.toString()}this.input.dispatchEvent(new Event("change",{bubbles:!0}))}),this.input.addEventListener("change",n=>{this.value=Number(this.input.value)})}minus;plus;input;value;step=1;min;max};function s(){document.currentScript.closest('.w-form').querySelectorAll('[forms="increment-decrement"]').forEach(i=>{i.dataset.minusPlus||(new u(i),i.dataset.minusPlus="true")})}s();document.addEventListener("udesly.refresh",s);document.addEventListener("wf-change-cart-state",s);document.querySelectorAll('form[data-node-type="commerce-cart-form"]').forEach(i=>{new MutationObserver(s).observe(i,{childList:!0,subtree:!0})});})();
 </script>
-                        <style>
+                      <style>
 [forms="increment-decrement"] input[readonly] {
  cursor: none;
  background-color: inherit;
@@ -176,53 +177,53 @@
  display: none;
 }
 </style>
-                      </div>
                     </div>
-                  </form>
-                  <div class="w-form-done">
-                    <div>Thank you! Your submission has been received!</div>
                   </div>
-                  <div class="w-form-fail">
-                    <div>Oops! Something went wrong while submitting the form.</div>
-                  </div>
+                </form>
+                <div class="w-form-done">
+                  <div>Thank you! Your submission has been received!</div>
+                </div>
+                <div class="w-form-fail">
+                  <div>Oops! Something went wrong while submitting the form.</div>
                 </div>
               </div>
-              <a href="#" class="add2cartbttn w-button">Add to cart</a>
             </div>
-            <a href="#" class="quoterequestbtn w-button">Request Quote</a>
+            <a href="#" class="add2cartbttn w-button">Add to cart</a>
           </div>
+          <a href="cart.html" aria-current="page" class="quoterequestbtn w-button w--current">Request Quote</a>
         </div>
-        <div class="productcardwrap">
-          <a href="#" class="productcardimagewrap w-inline-block">
-            <div class="brix---badge-wrapper-top-right-2"></div><img src="images/Artboard-1.svg" width="500" alt="ProductImage" class="productcardimg">
-          </a>
-          <div class="productcardcontent">
-            <div class="productcontentwrap">
-              <div class="partnumberxlwrap">
-                <div class="partnumberwrap">
-                  <h3 class="partnumberholder">%part_number%</h3>
-                </div>
-              </div>
-              <div class="brix---mg-bottom-24px-3">
-                <div class="brix---color-neutral-842">
-                  <p class="brix---paragraph-default-7">Description: manufacturer_partnumber_model_simpletype</p>
-                </div>
+      </div>
+      <div class="productcardwrap">
+        <a href="productpage-2.html" class="productcardimagewrap w-inline-block">
+          <div class="brix---badge-wrapper-top-right-2"></div><img src="images/Artboard-1.svg" width="500" alt="ProductImage" class="productcardimg">
+        </a>
+        <div class="productcardcontent">
+          <div class="productcontentwrap">
+            <div class="partnumberxlwrap">
+              <div class="partnumberwrap">
+                <h3 class="partnumberholder">%part_number%</h3>
               </div>
             </div>
-            <div class="quantitytocart">
-              <div class="productcardinput">
-                <div class="w-form">
-                  <form id="email-form" name="email-form" data-name="Email Form" method="get">
-                    <div class="quantityinput">
-                      <div forms="increment-decrement" class="increasedecreasebtn">
-                        <a button="minus" href="#" class="decrement-button w-button">-</a><input type="number" class="input-field w-input" maxlength="256" name="Quantity-2" data-name="Quantity 2" placeholder="0" id="Quantity-2" required="">
-                        <a button="plus" href="#" class="increment-button w-button">+</a>
-                      </div>
-                      <div class="udesly-code-snippet-4 w-embed w-script">
-                        <script>
+            <div class="brix---mg-bottom-24px-3">
+              <div class="brix---color-neutral-842">
+                <p class="brix---paragraph-default-7">{ % Description: manufacturer _partnumber_ modelnumber_ simpletype %}</p>
+              </div>
+            </div>
+          </div>
+          <div class="quantitytocart">
+            <div class="productcardinput">
+              <div class="w-form">
+                <form id="QuantityInput" name="email-form" data-name="Email Form" method="get">
+                  <div class="quantityinput">
+                    <div forms="increment-decrement" class="increasedecreasebtn">
+                      <a button="minus" href="#" class="decrement-button w-button">-</a><input type="number" class="input-field w-input" maxlength="256" name="Quantity-2" data-name="Quantity 2" placeholder="0" id="Quantity" required="">
+                      <a button="plus" href="#" class="increment-button w-button">+</a>
+                    </div>
+                    <div class="udesly-code-snippet-4 w-embed w-script">
+                      <script>
 (()=>{var u=class{constructor(t){this.wrapper=t;if(this.minus=t.querySelector('[button="minus"]'),!this.minus){console.error("Missing minus button",t);return}if(this.plus=t.querySelector('[button="plus"]'),!this.plus){console.error("Missing plus button",t);return}if(this.input=t.querySelector('input[type="number"], input[inputmode="numeric"]'),!this.input){console.error("Missing valid input",t);return}this.step=Number(this.input.getAttribute("step")||"1")||1,this.input.hasAttribute("min")&&(this.min=Number(this.input.getAttribute("min"))),this.input.hasAttribute("max")&&(this.max=Number(this.input.getAttribute("max"))),this.input.setAttribute("readonly",""),this.value=Number(this.input.value)||0,this.minus.addEventListener("click",n=>{if(n.preventDefault(),n.stopPropagation(),this.min==null)this.input.value=(this.value-this.step).toString();else{let e=this.value-this.step;e<this.min&&(e=this.min),this.input.value=e.toString()}this.input.dispatchEvent(new Event("change",{bubbles:!0}))}),this.plus.addEventListener("click",n=>{if(n.preventDefault(),n.stopPropagation(),this.max==null)this.input.value=(this.value+this.step).toString();else{let e=this.value+this.step;e>this.max&&(e=this.max),this.input.value=e.toString()}this.input.dispatchEvent(new Event("change",{bubbles:!0}))}),this.input.addEventListener("change",n=>{this.value=Number(this.input.value)})}minus;plus;input;value;step=1;min;max};function s(){document.currentScript.closest('.w-form').querySelectorAll('[forms="increment-decrement"]').forEach(i=>{i.dataset.minusPlus||(new u(i),i.dataset.minusPlus="true")})}s();document.addEventListener("udesly.refresh",s);document.addEventListener("wf-change-cart-state",s);document.querySelectorAll('form[data-node-type="commerce-cart-form"]').forEach(i=>{new MutationObserver(s).observe(i,{childList:!0,subtree:!0})});})();
 </script>
-                        <style>
+                      <style>
 [forms="increment-decrement"] input[readonly] {
  cursor: none;
  background-color: inherit;
@@ -231,53 +232,53 @@
  display: none;
 }
 </style>
-                      </div>
                     </div>
-                  </form>
-                  <div class="w-form-done">
-                    <div>Thank you! Your submission has been received!</div>
                   </div>
-                  <div class="w-form-fail">
-                    <div>Oops! Something went wrong while submitting the form.</div>
-                  </div>
+                </form>
+                <div class="w-form-done">
+                  <div>Thank you! Your submission has been received!</div>
+                </div>
+                <div class="w-form-fail">
+                  <div>Oops! Something went wrong while submitting the form.</div>
                 </div>
               </div>
-              <a href="#" class="add2cartbttn w-button">Add to cart</a>
             </div>
-            <a href="#" class="quoterequestbtn w-button">Request Quote</a>
+            <a href="#" class="add2cartbttn w-button">Add to cart</a>
           </div>
+          <a href="cart.html" aria-current="page" class="quoterequestbtn w-button w--current">Request Quote</a>
         </div>
-        <div class="productcardwrap">
-          <a href="#" class="productcardimagewrap w-inline-block">
-            <div class="brix---badge-wrapper-top-right-2"></div><img src="images/Artboard-1.svg" width="500" alt="ProductImage" class="productcardimg">
-          </a>
-          <div class="productcardcontent">
-            <div class="productcontentwrap">
-              <div class="partnumberxlwrap">
-                <div class="partnumberwrap">
-                  <h3 class="partnumberholder">%part_number%</h3>
-                </div>
-              </div>
-              <div class="brix---mg-bottom-24px-3">
-                <div class="brix---color-neutral-842">
-                  <p class="brix---paragraph-default-7">Description: manufacturer_partnumber_model_simpletype</p>
-                </div>
+      </div>
+      <div class="productcardwrap">
+        <a href="productpage-2.html" class="productcardimagewrap w-inline-block">
+          <div class="brix---badge-wrapper-top-right-2"></div><img src="images/Artboard-1.svg" width="500" alt="ProductImage" class="productcardimg">
+        </a>
+        <div class="productcardcontent">
+          <div class="productcontentwrap">
+            <div class="partnumberxlwrap">
+              <div class="partnumberwrap">
+                <h3 class="partnumberholder">%part_number%</h3>
               </div>
             </div>
-            <div class="quantitytocart">
-              <div class="productcardinput">
-                <div class="w-form">
-                  <form id="email-form" name="email-form" data-name="Email Form" method="get">
-                    <div class="quantityinput">
-                      <div forms="increment-decrement" class="increasedecreasebtn">
-                        <a button="minus" href="#" class="decrement-button w-button">-</a><input type="number" class="input-field w-input" maxlength="256" name="Quantity-2" data-name="Quantity 2" placeholder="0" id="Quantity-2" required="">
-                        <a button="plus" href="#" class="increment-button w-button">+</a>
-                      </div>
-                      <div class="udesly-code-snippet-4 w-embed w-script">
-                        <script>
+            <div class="brix---mg-bottom-24px-3">
+              <div class="brix---color-neutral-842">
+                <p class="brix---paragraph-default-7">{ % Description: manufacturer _partnumber_ modelnumber_ simpletype %}</p>
+              </div>
+            </div>
+          </div>
+          <div class="quantitytocart">
+            <div class="productcardinput">
+              <div class="w-form">
+                <form id="QuantityInput" name="email-form" data-name="Email Form" method="get">
+                  <div class="quantityinput">
+                    <div forms="increment-decrement" class="increasedecreasebtn">
+                      <a button="minus" href="#" class="decrement-button w-button">-</a><input type="number" class="input-field w-input" maxlength="256" name="Quantity-2" data-name="Quantity 2" placeholder="0" id="Quantity" required="">
+                      <a button="plus" href="#" class="increment-button w-button">+</a>
+                    </div>
+                    <div class="udesly-code-snippet-4 w-embed w-script">
+                      <script>
 (()=>{var u=class{constructor(t){this.wrapper=t;if(this.minus=t.querySelector('[button="minus"]'),!this.minus){console.error("Missing minus button",t);return}if(this.plus=t.querySelector('[button="plus"]'),!this.plus){console.error("Missing plus button",t);return}if(this.input=t.querySelector('input[type="number"], input[inputmode="numeric"]'),!this.input){console.error("Missing valid input",t);return}this.step=Number(this.input.getAttribute("step")||"1")||1,this.input.hasAttribute("min")&&(this.min=Number(this.input.getAttribute("min"))),this.input.hasAttribute("max")&&(this.max=Number(this.input.getAttribute("max"))),this.input.setAttribute("readonly",""),this.value=Number(this.input.value)||0,this.minus.addEventListener("click",n=>{if(n.preventDefault(),n.stopPropagation(),this.min==null)this.input.value=(this.value-this.step).toString();else{let e=this.value-this.step;e<this.min&&(e=this.min),this.input.value=e.toString()}this.input.dispatchEvent(new Event("change",{bubbles:!0}))}),this.plus.addEventListener("click",n=>{if(n.preventDefault(),n.stopPropagation(),this.max==null)this.input.value=(this.value+this.step).toString();else{let e=this.value+this.step;e>this.max&&(e=this.max),this.input.value=e.toString()}this.input.dispatchEvent(new Event("change",{bubbles:!0}))}),this.input.addEventListener("change",n=>{this.value=Number(this.input.value)})}minus;plus;input;value;step=1;min;max};function s(){document.currentScript.closest('.w-form').querySelectorAll('[forms="increment-decrement"]').forEach(i=>{i.dataset.minusPlus||(new u(i),i.dataset.minusPlus="true")})}s();document.addEventListener("udesly.refresh",s);document.addEventListener("wf-change-cart-state",s);document.querySelectorAll('form[data-node-type="commerce-cart-form"]').forEach(i=>{new MutationObserver(s).observe(i,{childList:!0,subtree:!0})});})();
 </script>
-                        <style>
+                      <style>
 [forms="increment-decrement"] input[readonly] {
  cursor: none;
  background-color: inherit;
@@ -286,21 +287,20 @@
  display: none;
 }
 </style>
-                      </div>
                     </div>
-                  </form>
-                  <div class="w-form-done">
-                    <div>Thank you! Your submission has been received!</div>
                   </div>
-                  <div class="w-form-fail">
-                    <div>Oops! Something went wrong while submitting the form.</div>
-                  </div>
+                </form>
+                <div class="w-form-done">
+                  <div>Thank you! Your submission has been received!</div>
+                </div>
+                <div class="w-form-fail">
+                  <div>Oops! Something went wrong while submitting the form.</div>
                 </div>
               </div>
-              <a href="#" class="add2cartbttn w-button">Add to cart</a>
             </div>
-            <a href="#" class="quoterequestbtn w-button">Request Quote</a>
+            <a href="#" class="add2cartbttn w-button">Add to cart</a>
           </div>
+          <a href="cart.html" aria-current="page" class="quoterequestbtn w-button w--current">Request Quote</a>
         </div>
       </div>
     </div>

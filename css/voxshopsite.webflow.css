@@ -2282,6 +2282,17 @@
   line-height: 30px;
 }
 
+.featuredproductwrap {
+  grid-column-gap: 8px;
+  grid-row-gap: 64px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  margin-bottom: 40px;
+  padding-left: 40px;
+  display: grid;
+}
+
 @media screen and (min-width: 1280px) {
   .productsection {
     padding-top: 0;
@@ -2293,7 +2304,7 @@
   }
 
   .heading-jumbo {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
     font-weight: 800;
   }
 
@@ -2389,6 +2400,11 @@
     left: auto;
     right: 0%;
   }
+
+  .featuredproductwrap {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 @media screen and (min-width: 1920px) {
@@ -2396,8 +2412,14 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
+  .heading-jumbo {
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-weight: 700;
+  }
+
   .heading-2 {
     text-align: center;
+    font-size: 26px;
   }
 
   .categorywrap {
@@ -2413,6 +2435,11 @@
     grid-template-columns: .25fr 1.5fr;
   }
 
+  .featuredwrap.cc-store-home-wrap {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
   .voxshopmain {
     padding-left: 100px;
     padding-right: 100px;
@@ -2420,6 +2447,10 @@
 
   .featuredproductheading {
     text-align: center;
+  }
+
+  .featuredproductwrap {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -2646,6 +2677,10 @@
 
   .search-button-2 {
     display: flex;
+  }
+
+  .featuredproductwrap {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -2950,7 +2985,7 @@
     margin-right: 0;
   }
 
-  .brix---grid-3-columns-gap-row-64px-copy, .productgridcard {
+  .brix---grid-3-columns-gap-row-64px-copy, .productgridcard, .featuredproductwrap {
     grid-row-gap: 68px;
     grid-template-columns: 1fr;
   }
@@ -3347,6 +3382,16 @@
   .warrantycontent, .refundcontent {
     font-size: 17px;
     line-height: 28px;
+  }
+
+  .featuredproductwrap {
+    grid-column-gap: 8px;
+    grid-row-gap: 40px;
+    flex-direction: row;
+    grid-template-rows: auto;
+    grid-template-columns: .5fr;
+    grid-auto-columns: 1fr;
+    display: grid;
   }
 }
 
