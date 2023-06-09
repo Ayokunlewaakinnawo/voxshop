@@ -855,7 +855,7 @@
   align-items: start;
   justify-items: start;
   padding-top: 120px;
-  padding-bottom: 60px;
+  padding-bottom: 0;
 }
 
 .links-section-footer {
@@ -2293,12 +2293,21 @@
   display: grid;
 }
 
+.div-block-41 {
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  display: flex;
+}
+
 @media screen and (min-width: 1280px) {
   .productsection {
     padding-top: 0;
   }
 
   .productgrid {
+    grid-row-gap: 64px;
     padding-left: 20px;
     padding-right: 20px;
   }
